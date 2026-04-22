@@ -5,7 +5,6 @@ const razorpay = process.env.RAZORPAY_KEY_ID ? new Razorpay({
   key_id:     process.env.RAZORPAY_KEY_ID,
   key_secret: process.env.RAZORPAY_KEY_SECRET,
 }) : null;
-});
 
 // @POST /api/orders — create order (user)
 exports.createOrder = async (req, res, next) => {
